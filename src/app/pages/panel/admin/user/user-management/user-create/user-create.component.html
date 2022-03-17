@@ -1,0 +1,162 @@
+<div class="row mt-4 ">
+    <div class="col-12">
+        <div class="container">
+
+
+            <h3 class="m-3">Kullanıcı Ekle</h3>
+
+    
+                    <form [formGroup]="registerCreateForm" (ngSubmit)="saveUser()" class="create-retro__form mw-100">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group ">
+                                    <label for="name">Ad</label>
+                                    <input type="text" formControlName="name"
+                                        [ngClass]="(registerCreateForm.get('name')?.invalid && ( registerCreateForm.get('name')?.touched || registerCreateForm.get('name')?.dirty || isSubmit))?'is-invalid':''"
+                                        id="name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group ">
+                                    <label for="surname">Soyad</label>
+                                    <input type="text" formControlName="surname"
+                                        [ngClass]="(registerCreateForm.get('surname')?.invalid && ( registerCreateForm.get('surname')?.touched || registerCreateForm.get('surname')?.dirty || isSubmit))?'is-invalid':''"
+                                        id="surname" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group ">
+                                    <label for="email">Email</label>
+                                    <input type="email" formControlName="email"
+                                        [ngClass]="(registerCreateForm.get('email')?.invalid && ( registerCreateForm.get('email')?.touched || registerCreateForm.get('email')?.dirty || isSubmit))?'is-invalid':''"
+                                        id="email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group ">
+                                    <label for="phone">Telefon</label>
+                                    <input type="number" formControlName="phone"
+                                        [ngClass]="(registerCreateForm.get('phone')?.invalid && ( registerCreateForm.get('phone')?.touched || registerCreateForm.get('phone')?.dirty || isSubmit))?'is-invalid':''"
+                                        id="phone" class="form-control">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group ">
+                            <label for="companyName">Şirket Adı</label>
+                            <input type="text" formControlName="companyName"
+                                [ngClass]="(registerCreateForm.get('companyName')?.invalid && ( registerCreateForm.get('companyName')?.touched || registerCreateForm.get('companyName')?.dirty || isSubmit))?'is-invalid':''"
+                                id="companyName" class="form-control">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group ">
+                                    <label for="companySector">Faaliyet Alanı</label>
+                                    <select id="companySector" formControlName="companySector" class="form-control"
+                                        [ngClass]="(registerCreateForm.get('companySector')?.invalid && ( registerCreateForm.get('companySector')?.touched || registerCreateForm.get('companySector')?.dirty || isSubmit))?'is-invalid':''">
+                                        <option *ngFor="let item of  sectorData" [value]="item.id">
+                                            {{item.text}}
+                                        </option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group ">
+                                    <label for="companyPosition">Firma Pozisyonu </label>
+                                    <input type="text" formControlName="companyPosition"
+                                        [ngClass]="(registerCreateForm.get('companyPosition')?.invalid && ( registerCreateForm.get('companyPosition')?.touched || registerCreateForm.get('companyPosition')?.dirty || isSubmit))?'is-invalid':''"
+                                        id="companyPosition" class="form-control">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group ">
+                            <label for="companyAdress">Firma Adresi </label>
+                            <textarea type="text" formControlName="companyAdress"
+                                [ngClass]="(registerCreateForm.get('companyAdress')?.invalid && ( registerCreateForm.get('companyAdress')?.touched || registerCreateForm.get('companyAdress')?.dirty || isSubmit))?'is-invalid':''"
+                                id="companyAdress" class="form-control"></textarea>
+                        </div>
+
+
+                        <div class="form-group ">
+                            <label for="commentCount">Şifre</label>
+                            <input formControlName="password"
+                                [ngClass]="(registerCreateForm.get('password')?.invalid &&  (registerCreateForm.controls.password?.dirty || registerCreateForm.controls.password.touched || isSubmit))?'is-invalid':''"
+                                type="password" id="password" class="form-control">
+                        </div>
+
+                        <div class="form-group ml-3">
+                            <div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                       
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button type="submit" [class.disabled]="registerCreateForm?.invalid"
+                                                    class="btn btn-theme float-right"> Kaydet <img *ngIf="isSubmit" class="float-start px-1"
+                                                        src="../../../../assets/img/circle-loading.svg">
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div
+                            *ngIf="registerCreateForm.get('password')?.invalid && (registerCreateForm.controls.password?.dirty || registerCreateForm.controls.password.touched)">
+
+                            <span class="invalid-feedback text-start"
+                                [ngClass]="registerCreateForm.controls['password'].hasError('required') || registerCreateForm.controls['password'].hasError('minlength')  ?  'd-block' : 'd-none'">
+                                {{'register.must_be_at_least_eight_characters' | translate}}
+                            </span>
+
+                            <span class="invalid-feedback text-start"
+                                [ngClass]="registerCreateForm.controls['password'].hasError('required') || registerCreateForm.controls['password'].hasError('hasNumber')  ? 'd-block' : 'd-none'">
+                                {{'register.must_contain_at_least_1_number' | translate}}
+                            </span>
+
+                            <span class="invalid-feedback text-start"
+                                [ngClass]="registerCreateForm.controls['password'].hasError('required') || registerCreateForm.controls['password'].hasError('hasCapitalCase')  ? 'd-block' : 'd-none'">
+                                {{'register.must_contain_at_least_1_capital_letter' | translate}}
+                            </span>
+
+                            <span class="invalid-feedback text-start"
+                                [ngClass]="registerCreateForm.controls['password'].hasError('required') || registerCreateForm.controls['password'].hasError('hasSmallCase')  ? 'd-block' : 'd-none'">
+
+                                {{'register.must_contain_at_least_1_lowercase_letter' | translate}}
+                            </span>
+                            <span class="invalid-feedback text-start"
+                                [ngClass]="registerCreateForm.controls['password'].hasError('required') || registerCreateForm.controls['password'].hasError('hasSpecialCharacters') ? 'd-block' : 'd-none'">
+                                {{'register.must_contain_at_least_1_special_character' | translate}}
+                            </span>
+
+
+
+                        </div>
+
+
+                    </form>
+
+
+        </div>
+    </div>
+</div>

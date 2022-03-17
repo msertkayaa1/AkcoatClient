@@ -1,0 +1,33 @@
+<div class="background"></div>
+<div class="container">
+	<div class="row">
+		<div class="modalbox success col-sm-8 col-md-6 col-lg-5 center animate mt-5" *ngIf="isSaveSuccess==1">
+			<div class="icon">
+				<span class="fas fa-check"></span>
+			</div>
+			<!--/.icon-->
+			<h1>Başarılı</h1>
+			<p>{{ message}}</p>
+
+			
+			
+		</div>
+		<!--/.success-->
+	</div>
+	<!--/.row-->
+	<div class="row">
+		<div class="modalbox error col-sm-8 col-md-6 col-lg-5 center animate mt-5"   *ngIf="isSaveSuccess==0">
+			<div class="icon">
+				<span class="fas fa-times"></span>
+			</div>
+			<!--/.icon-->
+			<h1>Hata!</h1>
+			<p>{{message}}</p>
+		
+		</div>
+		<!--/.success-->
+	</div>
+	<!--/.row-->
+</div>
+<!--/.container-->
+      

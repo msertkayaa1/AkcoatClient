@@ -1,0 +1,291 @@
+{
+    "login":{
+        "title":"Oturum Aç",
+        "user_name":"Email",
+        "password":"Şifre",
+        "login": "Giriş",
+        "forgot_password":"Parolanızı mı unuttunuz ?",
+        "dont_have_an_account":"Hesabın Yok mu ?",
+        "create_new_account":"Yeni hesap oluştur"
+        
+
+    },
+    "admin_profile":{
+        "my_account_information":"Hesap Bilgilerim",
+        "user_name":"Kullanıcı adı",
+        "enter_user_name":"Kullanıcı adı giriniz",
+        "e_mail":"Email",
+        "enter_your_email":"Email giriniz",
+        "ınvalid_email":"Geçersiz email",
+        "this_email_has_not_been_verified_yet":"Bu e-posta henüz doğrulanmadı.",
+        "we_have_sent_a_confirmation_email_to":"adresine bir doğrulama e-postası gönderdik.",
+        "please_check_or_verify_your_emails":"Lütfen e-postalarınızı kontrol edin veya doğrulama",
+        "repost_the_link":"Bağlantısını yeniden gönderin.",
+        "save_changes":"Değişiklikleri kaydet",
+        "delete_the_account":"Hesabı Sil    "
+    },
+    "new_group":{
+      "group_name":"Grup Adı",
+      "enter_group_name":"Grup Adı Giriniz",
+      "colour":"Renk",
+      "photograph":"Fotoğraf",
+      "save":"Kaydet",
+      "groups":"Gruplar"
+      
+
+    },
+    "appearance_management":{
+       "background":"Arkaplan",
+       "upload_background":"Arkaplan Yükle",
+       "choose_a_picture":"Bir resim seç",
+       "clean":"Temizle",
+       "cancel":"İptal",
+       "save":"Kaydet"
+
+
+    },
+    "help_center_detail":{
+       "title":"Başlık",
+       "explanation":"Açıklama",
+       "message":"Mesaj"
+
+    },
+    "help_center":{
+       "messages":"Mesajlar"
+
+    },
+    "link_create":{
+       "new":"Yeni",
+       "platform_name":"Platform Adı",
+       "enter_platform_name":"Platform Adı Giriniz",
+       "enter_platform_link":"Platform Linki Giriniz",
+       "please_enter_a_maximum_of_200_characters":"Maksimum 200 karakter giriniz",
+       "platform_connection":"Platform Bağlantısı",
+       "customize_the_platform_button_appearance":"Platform buton görünümünü özelleştirin",
+       "prewiev":"Ön izleme",
+       "save":"Kaydet"
+
+
+    },
+    "link_edit":{
+       "title":"Düzenle",
+       "platform_name":"Platform Adı",
+       "enter_platform_name":"Platform Adı Giriniz",
+       "platform_connection":"Platform Bağlantısı",
+       "enter_platform_link":"Platform Linki Giriniz",
+       "please_enter_a_maximum_of_200_characters":"Maksimum 200 karakter giriniz",
+       "customize_the_platform_button_appearance":"Platform buton görünümünü özelleştirin",
+       "prewiev":"Ön izleme",
+       "save":"Kaydet"
+    },
+    "link_management":{
+       "title":"Linkler",
+       "new":"Yeni"
+       
+
+
+    },
+    "page_edit":{
+        "title":"Düzenle"
+        
+    },
+    "pages_management":{
+        "title":"Sayfalar"
+
+    },
+    "settings":{
+       "title":"Sayfalar"
+    },
+    "user_admin_create":{
+       "title":"Yeni",
+       "email":"Email",
+       "enter_your_email":"Email giriniz",
+       "invalid_email":"Geçersiz Email",
+       "user_name":"Kullanıcı adı",
+       "new_password":"Yeni Şifre",
+       "must_be_at_least_eight_characters":"En az 8 karakter olmalı",
+       "must_contain_at_least_1_number":"En az 1 adet sayı içermeli",
+       "must_contain_at_least_1_capital_letter":"En az 1 adet büyük harf içermeli",
+       "must_contain_at_least_1_lowercase_letter":"En az 1 adet küçük harf içermeli",
+       "must_contain_at_least_1_special_character":"En az 1 adet özel karakter içermeli",
+       "save":"Kaydet"
+
+
+    },
+    "user_admin_edit":{
+       "title":"Düzenle",
+       "email":"Email",
+       "enter_your_email":"Email Giriniz",
+       "invalid_email":"Geçersiz Email",
+       "user_name":"Kullanıcı adı",
+       "enter_user_name":"Kullanıcı adı giriniz",
+       "save":"Kaydet"
+    },
+    "user_admin_management":{
+       "title":"Adminler",
+       "new":"Yeni"
+    },
+    "user_client_create":{
+       "title":"Yeni",
+       "email":"Email",
+       "enter_your_email":"Email Giriniz",
+       "invalid_email":"Geçersiz Email",
+       "user_name":"Kullanıcı adı",
+       "enter_user_name":"Kullanıcı adı giriniz",
+       "new_password":"Yeni Şifre",
+       "must_be_at_least_eight_characters":"En az 8 karakter olmalı",
+       "must_contain_at_least_1_number":"En az 1 adet sayı içermeli",
+       "must_contain_at_least_1_capital_letter":"En az 1 adet büyük harf içermeli",
+       "must_contain_at_least_1_lowercase_letter":"En az 1 adet küçük harf içermeli",
+       "must_contain_at_least_1_special_character":"En az 1 adet özel karakter içermeli",
+       "save":"Kaydet"
+    },
+    "user_client_edit":{
+       "title":"Edit",
+       "email":"Email",
+       "enter_your_email":"Email giriniz",
+       "invalid_email":"Geçersiz Email",
+       "user_name":"Kullanıcı adı",
+       "enter_user_name":"Kullanıcı adı giriniz",
+       "save":"Kaydet"
+
+
+    },
+    "user_client_library":{
+       "title":"Kütüphane Kullanıcıları",
+       "load":"Yükle",
+       "export":"Dışarı Aktar",
+       "sample_file":"Örnek Dosya",
+       "new":"Yeni"
+    },
+    "user_links":{
+      "create_new_connection":"Yeni Bağlantı Oluştur",
+      "title":"Başlık"
+    },
+    "user_client_management":{
+       "title":"Kullanıcılar"
+    },
+    "admin_layout":{
+       "title":"Hesabım",
+       "links":"Bağlantılar",
+       "appearance":"Görünüm",
+       "backgrounds":"Arkaplanlar",
+       "backgrounds_groups":"Arka plan grupları",
+       "users":"Kullanıcılar",
+       "basic_users":"Temel Kulllanıcılar",
+       "library_users":"Kütüphane Kullanıcıları",
+       "system_admin":"Sistem Admin",
+       "settings":"Ayarlar",
+       "pages":"Sayfalar",
+       "messages":"Mesajlar",
+       "sign_out":"Oturumu Kapat"
+
+    },
+    "admin_preview":{
+       "copy":"Kopyala",
+       "share":"Paylaş"
+    },
+    "home_layout":{
+       "title":"Oturum Aç",
+       "sign_up_for_free":"Ücretsiz Kaydol",
+       "profile":"Profil",
+       "sign_out":"Oturumu Kapat",
+       "add_new_user":"Yeni kullanıcı ekle",
+       "view_all":"Tümünü görüntüle",
+       "sign_in":"Oturum aç",
+       "register":"Kayıt ol",
+       "help":"Yardım",
+       "company":"Şirket",
+       "communication":"İletişim",
+       "security":"Gizlilik",
+       "about_us":"Hakkımızda",
+       "support":"Destek",
+       "how_to_use":"Nasıl kullanılır",
+       "frequently_asked_questions":"Sıkça Sorulan Sorulara (S.S.S)"
+      
+
+
+    },
+    "preview":{
+       "copy":"Kopyala",
+       "share":"Paylaş"
+       
+    },
+    "sidebar":{
+       "log_out":"Çıkış Yap"
+    },
+    "user_layout":{
+       "my_account":"Hesabım",
+       "links":"Bağlantılar",
+       "appearance":"Görünüm",
+       "backgrounds":"Arkaplanlar",
+       "sign_out":"Oturumu Kapat"
+       
+    },
+    "links":{
+       "whats_going_on":"Neler oluyor",
+       "tick_all_that_apply":"Geçerli olanların hepsini işaretleyin",
+       "labeling_problem":"Etiketleme Sorunu",
+       "wrong_content_or_wrong_special_or_episode_order":"Yanlış içerik veya özel ya da bölüm sırası yanlış",
+       "profile_issue":"Profil Sorunu",
+       "change_issues_and_other_issues":"Değişiklik sorunları ve diğer sorunlar",
+       "any_more_details_left_optional":"Başka Ayrıntı Kaldı mı? (İsteğe Bağlı)",
+       "submit_report":"Rapor gönder",
+       "give_up":"Vazgeç"
+    },
+    "home":{
+       "view_all":"Tümünü görüntüle",
+       "there_were_no_results":"There were no results",
+       "the_profile_you_are_looking_for_is_not_yet_in_our_database_by_clicking_the_button_to_be_added_you_can_provide":"Aradığın profil henüz veritabanımızda mevcut değil butonuna tıklayarak eklenmesini sağlayabilirsin",
+       "you_need_for_all_accounts":"tüm hesaplar için ihtiyacınız var",
+       "single_link":"Tek Bağlantı"
+      
+
+    },
+    "features":{
+       "how_to_use":"Nasıl kullanılır?",
+       "verified_profile":"Doğrulanmış Profil",
+       "create_your_own_style":"Kendi Tarzını Oluştur",
+       "easily_find_what_you_are_looking_for":"Aradığına Kolayca ulaş",
+       "easy_to_use":"Kolay Kullanım"
+    },
+    "forget":{
+       "I_forgot_my_password":"Şifremi Unuttum",
+       "user_name":"Kullanıcı adı",
+       "send":"Gönder",
+       "dont_have_an_account":"Hesabın Yok mu ?",
+       "create_new_account":"Yeni hesap oluştur"
+    },
+    "register":{
+       "create_new_account":"Yeni hesap oluştur",
+       "email":"Email",
+       "user_name":"Kullanıcı adı",
+       "must_be_at_least_eight_characters":"En az 8 karakter olmalı",
+       "must_contain_at_least_1_number":"En az 1 adet sayı içermeli",
+       "must_contain_at_least_1_capital_letter":"En az 1 adet büyük harf içermeli",
+       "must_contain_at_least_1_lowercase_letter":"En az 1 adet küçük harf içermeli",
+       "must_contain_at_least_1_special_character":"En az 1 adet özel karakter içermeli",
+       "by_creating_an_account":"Bir hesap oluşturarak",
+       "our_terms_and_conditions":"Şartlar ve Koşullarımızı",
+       "our_privacy_policy":"Gizlilik Politikamızı",
+       "you_accept":"kabul etmiş oluyorsunuz.",
+       "register":"Kayıt ol",
+       "forgot_password":"Parolanızı mı unuttunuz ?",
+       "already_have_an_account":"Zaten bir hesabın var mı ?",
+       "login":"Giriş Yap"
+       
+    },
+    "reset_password":{
+       "title":"Şifre Sıfırla",
+       "password":"Şifre",
+       "password_again":"Şifre Tekrar",
+       "save_password":"Şifre Kaydet"
+
+
+    }
+    
+
+
+
+
+}

@@ -1,0 +1,294 @@
+{
+    "login":{
+        "title":"Sign in",
+        "user_name":"Email",
+        "password":"Password",
+        "login": "Login",
+        "forgot_password":"Forgot password ?",
+        "dont_have_an_account":"Dont have an account ?",
+        "create_new_account":"Create new account"
+        
+
+    },
+    "admin_profile":{
+        "my_account_information":"My account information",
+        "user_name":"User name",
+        "enter_user_name":"Enter User name",
+        "e_mail":"Email",
+        "enter_your_email":"Enter your Email",
+        "ınvalid_email":"İnvalid Email",
+        "this_email_has_not_been_verified_yet":"This email has not been verified yet.",
+        "we_have_sent_a_confirmation_email_to":"We have sent a confirmation email to.",
+        "please_check_or_verify_your_emails":"Please check or verify your emails",
+        "repost_the_link":"Repost the link.",
+        "save_changes":"Save changes",
+        "delete_the_account":"Delete the account"
+    },
+    "new_group":{
+      "group_name":"Group name",
+      "enter_group_name":"Enter group name",
+      "colour":"Colour",
+      "photograph":"Photograph",
+      "save":"Save",
+      "groups":"Groups"
+      
+
+    },
+    "appearance_management":{
+       "background":"Background",
+       "upload_background":"Upload background",
+       "choose_a_picture":"Choose a picture",
+       "clean":"Clean",
+       "cancel":"Cancel",
+       "save":"Save"
+
+
+    },
+    "help_center_detail":{
+       "title":"Title",
+       "explanation":"Explanation",
+       "message":"Message"
+
+    },
+    "help_center":{
+       "messages":"Messages"
+
+    },
+    "link_create":{
+       "new":"New",
+       "platform_name":"Platform name",
+       "enter_platform_name":"Enter platform name",
+       "enter_platform_link":"Enter platform link",
+       "please_enter_a_maximum_of_200_characters":"Please enter a maximum of 200 characters",
+       "platform_connection":"Platform connection",
+       "customize_the_platform_button_appearance":"Customize the platform button appearance",
+       "prewiev":"Prewiev",
+       "save":"Save"
+
+
+    },
+    "link_edit":{
+       "title":"Edit",
+       "platform_name":"Platform name",
+       "enter_platform_name":"Enter platform name",
+       "platform_connection":"Platform Connection",
+       "enter_platform_link":"Enter platform link",
+       "please_enter_a_maximum_of_200_characters":"Please enter a maximum of 200 characters",
+       "customize_the_platform_button_appearance":"Customize the platform button appearance",
+       "prewiev":"Prewiev",
+       "save":"Save"
+    },
+    "link_management":{
+       "title":"Links",
+       "new":"New"
+       
+
+
+    },
+    "page_edit":{
+        "title":"Edit"
+        
+    },
+    "pages_management":{
+        "title":"Pages"
+
+    },
+    "settings":{
+       "title":"Pages"
+    },
+    "user_admin_create":{
+       "title":"New",
+       "email":"Email",
+       "enter_your_email":"Enter your email",
+       "invalid_email":"İnvalid email",
+       "user_name":"User name",
+       "new_password":"New password",
+       "must_be_at_least_eight_characters":"Must be at least eight characters",
+       "must_contain_at_least_1_number":"Must contain at least 1 number",
+       "must_contain_at_least_1_capital_letter":"Must contain at least 1 capital letter",
+       "must_contain_at_least_1_lowercase_letter":"Must contain at least 1 lowercase letter",
+       "must_contain_at_least_1_special_character":"Must contain at least 1 special character",
+       "save":"Save"
+
+
+    },
+    "user_admin_edit":{
+       "title":"Edit",
+       "email":"Email",
+       "enter_your_email":"Enter your email",
+       "invalid_email":"İnvalid email",
+       "user_name":"User name",
+       "enter_user_name":"Enter user name",
+       "save":"Save"
+    },
+    "user_admin_management":{
+       "title":"Admins",
+       "new":"New"
+    },
+    "user_client_create":{
+       "title":"New",
+       "email":"Email",
+       "enter_your_email":"Enter your email",
+       "invalid_email":"İnvalid email",
+       "user_name":"User name",
+       "enter_user_name":"Enter User name",
+       "new_password":"New password",
+       "must_be_at_least_eight_characters":"Must be at least eight characters",
+       "must_contain_at_least_1_number":"Must contain at least 1 number",
+       "must_contain_at_least_1_capital_letter":"Must contain at least 1 capital letter",
+       "must_contain_at_least_1_lowercase_letter":"Must contain at least 1 lowercase letter",
+       "must_contain_at_least_1_special_character":"Must contain at least 1 special character",
+       "save":"Save"
+    },
+    "user_client_edit":{
+       "title":"Edit",
+       "email":"Email",
+       "enter_your_email":"Enter your email",
+       "invalid_email":"İnvalid email",
+       "user_name":"User name",
+       "enter_user_name":"Enter user name",
+       "save":"Save"
+
+
+    },
+    "user_client_library":{
+       "title":"Library users",
+       "load":"load",
+       "export":"Export",
+       "sample_file":"Sample file",
+       "new":"New"
+    },
+    "user_links":{
+      "create_new_connection":"Create new connection",
+      "title":"Title"
+    },
+    "user_client_management":{
+       "title":"Users"
+    },
+    "admin_layout":{
+       "title":"My account",
+       "links":"Links",
+       "appearance":"Appearance",
+       "backgrounds":"Backgrounds",
+       "backgrounds_groups":"Backgrounds groups",
+       "users":"Users",
+       "basic_users":"Basic users",
+       "library_users":"Library users",
+       "system_admin":"System admin",
+       "settings":"Settings",
+       "pages":"Pages",
+       "messages":"Messages",
+       "sign_out":"sign out"
+
+    },
+    "admin_preview":{
+       "copy":"Copy",
+       "share":"Share"
+    },
+    "home_layout":{
+       "title":"Sign in",
+       "sign_up_for_free":"Sign up for free",
+       "profile":"Profile",
+       "sign_out":"Sign out",
+       "add_new_user":"Add new user",
+       "view_all":"View all",
+       "sign_in":"Sign in",
+       "register":"Register",
+       "help":"Help",
+       "company":"Company",
+       "communication":"Communication",
+       "security":"Security",
+       "about_us":"About us",
+       "support":"Support",
+       "how_to_use":"How to use",
+       "frequently_asked_questions":"Frequently asked questions (S.S.S)"
+      
+
+
+    },
+    "preview":{
+       "copy":"Copy",
+       "share":"Share"
+       
+    },
+    "sidebar":{
+       "log_out":"Log out"
+    },
+    "user_layout":{
+       "my_account":"My account",
+       "links":"Links",
+       "appearance":"Appearance",
+       "backgrounds":"Backgrounds",
+       "sign_out":"Sign out"
+       
+    },
+   
+   "links":{
+      "whats_going_on":"What going on",
+      "tick_all_that_apply":"Tick all that apply",
+      "labeling_problem":"Labeling Problem",
+      "wrong_content_or_wrong_special_or_episode_order":"Wrong content or wrong special or episode order",
+      "profile_issue":"Profile issue",
+      "change_issues_and_other_issues":"Change issuesw and other issues",
+      "any_more_details_left_optional":"Any more details left optional",
+      "submit_report":"Submit report",
+      "give_up":"Give up"
+   },
+   "home":{
+      "view_all":"View all",
+      "there_were_no_results":"There were no results",
+      "the_profile_you_are_looking_for_is_not_yet_in_our_database_by_clicking_the_button_to_be_added_you_can_provide":"The profile you are looking for is not yet in our database by clicking the button to be added you can provide",
+      "you_need_for_all_accounts":"You need for all accounts",
+      "single_link":"Single link"
+     
+
+   },
+   "features":{
+      "how_to_use":"How to use",
+      "verified_profile":"Verified profile",
+      "create_your_own_style":"Create your own style",
+      "easily_find_what_you_are_looking_for":"Easily find What you are looking for",
+      "easy_to_use":"Easy to use"
+   },
+   "forget":{
+      "I_forgot_my_password":"I forgot my password",
+      "user_name":"Username",
+      "send":"Send",
+      "dont_have_an_account":"Dont have an account",
+      "create_new_account":"Create new account"
+   },
+   "register":{
+      "create_new_account":"Create new account",
+      "email":"Email",
+      "user_name":"Username",
+      "must_be_at_least_eight_characters":"Must be at least eight characters",
+      "must_contain_at_least_1_number":"Must contain at least 1 number",
+      "must_contain_at_least_1_capital_letter":"Must contain at least 1 capital letter",
+      "must_contain_at_least_1_lowercase_letter":"Must contain at least 1 lowercase letter",
+      "must_contain_at_least_1_special_character":"Must contain at least 1 special character",
+      "by_creating_an_account":"By creating an account",
+      "our_terms_and_conditions":"Our terms and conditions",
+      "our_privacy_policy":"Our privacy policy",
+      "you_accept":"You accept",
+      "register":"Register",
+      "forgot_password":"Forgot password ?",
+      "already_have_an_account":"Already have an account ?",
+      "login":"Login"
+      
+   },
+   "reset_password":{
+      "title":"Reset_password",
+      "password":"Password",
+      "password_again":"Password again",
+      "save_password":"Save password"
+
+
+   }
+   
+
+
+
+
+
+
+}

@@ -1,0 +1,78 @@
+<div class="page-wrapper">
+  <div class="sidebar">
+    <div class="sidebar__header">
+      <img src="assets/img/logo.png" alt="" class="sidebar__logo">
+    </div>
+    <div class="sidebar__content">
+      <ul class="sidebar__menu">
+
+
+
+
+        <li class="sidebar__menu-item" *ngFor="let menu of menuItems; let i = index" routerLinkActive="active">
+
+
+          <div class="sidebar__menu-item-content">
+
+            <a [routerLink]="menu.path" class="sidebar__menu-link" *ngIf="menu.type === 'link'">
+              <i [ngClass]="menu.icontype"></i>
+
+              <span>{{ menu.title }}</span>
+            </a>
+
+            <a role="button" aria-expanded="false" [attr.aria-controls]="'#m'+i" class="sidebar__menu-link"
+              data-toggle="collapse" [attr.href]="'#m'+i" *ngIf="menu.type === 'sub'">
+              <i [ngClass]="menu.icontype"></i>
+              <span>{{ menu.title }}</span>
+            </a>
+
+            <div [attr.id]="'m'+i" class="collapse" *ngIf="menu.type === 'sub'">
+              <ul style="list-style-type: none;">
+                <li *ngFor="let childitem of menu.children" style="  padding: 10px 20px;">
+                  <a [routerLink]="[menu.path, childitem.path]">
+                    <span class="sidebar-normal" style=" color:#0C3E66;font-size:14px">{{ childitem.title }}</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
+          </div>
+        </li>
+
+
+
+      </ul>
+
+
+    </div>
+  </div>
+  <div class="content-main">
+    <div class="header d-flex justify-content-between align-items-center">
+      <div class="header__navigation">
+        <a href="#" class="header__navigate-back">
+          <i class="fa fa-chevron-left"></i>
+        </a>
+      </div>
+      <div class="header__user">
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="headerUserDropdown" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-user"></i>
+          
+            <span>Hoşgeldin {{user?.name}}</span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="headerUserDropdown">
+            <a class="dropdown-item" href="#">Hesap Ayarları</a>
+            <a (click)="logoutAlert()" class="dropdown-item" href="javascript:;">Çıkış Yap</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <router-outlet></router-outlet>
+  </div>
+
+
+
+</div>

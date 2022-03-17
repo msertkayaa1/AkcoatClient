@@ -1,0 +1,83 @@
+<div class="row mt-4 ">
+    <div class="col-12">
+        <h3 class="m-3">Kullanıcılar</h3>
+
+        <div class="row">
+            <div class="col-sm-3 ">
+
+                <input type="text" class="form-control mb-3 float-end" placeholder="Ara" (keyup)="updateFilter($event)" />
+            </div>
+
+            <div class=" offset-md-6 col-sm-3 ">
+
+                <button type="button" (click)="newUser()" class="btn btn-theme float-right"> Kullanıcı Ekle
+                </button>
+            </div>
+        </div>
+
+        <ngx-datatable #table class="material" [rows]="rows" [columnMode]="ColumnMode.force" [headerHeight]="50"
+            [footerHeight]="50" [rowHeight]="60" [limit]="5" [loadingIndicator]="loading"
+            [messages]="{emptyMessage: 'Kayıt bulunamadı', totalMessage: 'Toplam'}" (page)="onPage($event)">
+
+            <ngx-datatable-column prop="name" name="Ad">
+                <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+
+                    {{row.name}}
+                </ng-template>
+            </ngx-datatable-column>
+
+            <ngx-datatable-column prop="surname" name="Soyad">
+                <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+
+                    {{row.surname}}
+                </ng-template>
+            </ngx-datatable-column>
+
+            <ngx-datatable-column prop="email" name="Email">
+                <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+
+                    {{row.email}}
+                </ng-template>
+            </ngx-datatable-column>
+
+            <ngx-datatable-column prop="phone" name="Telefon">
+                <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+
+                    {{row.phone}}
+                </ng-template>
+            </ngx-datatable-column>
+
+            <ngx-datatable-column prop="state" name="Durum">
+                <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+                    <span class="badge   badge-sm badge-{{row.status>0?'success':'danger'}}">
+                        {{row.status>0?'Aktif':'Onay Bekliyor'}}
+                    </span>
+
+                </ng-template>
+            </ngx-datatable-column>
+
+            <ngx-datatable-column prop="id" name="İşlemler">
+                <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+
+                    <a [routerLink]="['/panel/user/list',row.id]" class="mx-3" tooltip='Düzenle'>
+                        <i class="fas fa-pencil-alt text-primary" aria-hidden="true"></i>
+                    </a>
+                    <a href="javascript:;" (click)="showSwal(row.id)" tooltip='Sil'>
+                        <i class="fas fa-trash text-danger" aria-hidden="true"></i>
+                    </a>
+
+
+
+
+
+                </ng-template>
+            </ngx-datatable-column>
+
+        </ngx-datatable>
+
+
+
+
+
+    </div>
+</div>

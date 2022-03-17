@@ -1,0 +1,57 @@
+<div class="row mt-4 ">
+    <div class="col-12">
+        <h3 class="m-3">Ürün Parametreleri</h3>
+
+        <ngx-datatable #table class="material" [rows]="rows" [columnMode]="ColumnMode.force" [headerHeight]="50"
+            [footerHeight]="50" [rowHeight]="60" [limit]="5" [loadingIndicator]="loading"
+            [messages]="{emptyMessage: 'Kayıt bulunamadı', totalMessage: 'Toplam'}" (page)="onPage($event)">
+
+            <ngx-datatable-column prop="name" name="Type">
+                <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+
+                    {{row.typeName}}
+                </ng-template>
+            </ngx-datatable-column>
+
+            <ngx-datatable-column prop="name" name="value">
+                <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+
+                    {{row.value}}
+                </ng-template>
+            </ngx-datatable-column>
+
+       
+            <ngx-datatable-column prop="state" name=" Durum">
+                <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+                    <span class="badge   badge-sm badge-{{row.state>0?'success':'danger'}}">
+                        {{row.state>0?'Aktif':'Pasif'}}
+                    </span>
+
+                </ng-template>
+            </ngx-datatable-column>
+
+            <ngx-datatable-column prop="id" name="İşlemler">
+                <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+                    
+                    <a href="javascript:;" class="mx-3" tooltip='Düzenle'>
+                        <i class="fas fa-pencil-alt text-secondary" aria-hidden="true"></i>
+                    </a>
+                    <a href="javascript:;" tooltip='Sil'>
+                        <i class="fas fa-trash text-secondary" aria-hidden="true"></i>
+                    </a>
+
+
+                  
+
+
+                </ng-template>
+            </ngx-datatable-column>
+
+        </ngx-datatable>
+
+
+
+
+
+    </div>
+</div>
